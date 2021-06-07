@@ -1,0 +1,274 @@
+/* open-sans-regular - latin_cyrillic */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/open-sans-v20-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/open-sans-v20-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/open-sans-v20-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+  }
+  /* open-sans-600 - latin_cyrillic */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/open-sans-v20-latin_cyrillic-600.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/open-sans-v20-latin_cyrillic-600.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/open-sans-v20-latin_cyrillic-600.woff') format('woff'), /* Modern Browsers */
+  }
+  /* open-sans-700 - latin_cyrillic */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/open-sans-v20-latin_cyrillic-700.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/open-sans-v20-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/open-sans-v20-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
+  }
+
+  /* roboto-regular - latin_cyrillic */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v27-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/roboto-v27-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/roboto-v27-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+  }
+
+  /* raleway-300 - latin_cyrillic */
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/raleway-v19-latin_cyrillic-300.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/raleway-v19-latin_cyrillic-300.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/raleway-v19-latin_cyrillic-300.woff') format('woff'), /* Modern Browsers */
+  }
+
+/* Общие стили */
+
+.editorconfig {
+    root = true
+    
+    [*]
+    indent_style = space
+    indent_size = 2
+    end_of_line = lf
+    trim_trailing_whitespace = true
+    insert_final_newline = true
+    charset = utf-8
+    
+    [{*.json,*.yml,*.toml}]
+    indent_size = 2
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    border: 1px solid #000;
+}
+
+h1 {
+    font-family: "Raleway", sans-serif;;
+    margin-top: 191;
+    margin-bottom: 323px;
+    font-size: 116px;
+    font-weight: 300;
+    line-height: 136px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 55px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.master-classes-btn {
+    height: 63px;
+    width: 164px;
+    left: 0px;
+    top: 43px;
+    border-radius: 5px;
+    padding: 15px, 30px, 15px, 30px;
+    background: orange;
+}
+
+/* Header */
+
+.header {  
+    background-repeat: no-repeat;  
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 1140px;
+    height: 100px;
+    background-color:#152B3C;
+}
+
+.header_wrap {
+    display: flex;
+    align-items: center;
+}
+
+.main-nav ul {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none; /* убираем маркеры */
+}
+
+.logo {
+    display: block;
+    text-align: left;
+    padding: 25px 202px 25px 81px;
+}
+
+.nav-phone {
+    font-family: Roboto, sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: #FBF2DA;
+}
+
+.nav-flex-container ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/* Info-presentation */
+
+.info-presentation-block {
+    background-image: url(../images/info-presentation-sand-castle.jpg);  
+    background-repeat: no-repeat;  
+    background-position: center;  
+    background-size: cover;
+}
+
+.info-presentation-text {
+    font-family: Open Sans, sans-serif;
+    font-size: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* Master-classes*/ 
+
+.master-classes {
+    background-repeat: no-repeat;  
+    background-position: center;  
+    background-size: cover;
+    background-color: rgba(251, 242, 218, 0.2);  
+}
+
+.select_bold {
+    font-size: 20px;
+    font-weight: bold;
+    color: #D46240;
+}
+
+.select_semibold {
+    font-size: 28px;
+    font-weight: semibold;
+    color: #D46240;
+}
+
+/* Photos-from-events */
+
+.photos-from-events {
+    background-repeat: no-repeat;  
+    background-position: center;  
+    background-size: cover;
+    background-color: rgba(251, 242, 218, 1);  
+}
+
+/* Locations */
+
+.locations {
+    background-repeat: no-repeat;  
+    background-position: center;  
+    background-size: cover;
+    background-color: rgba(251, 242, 218, 0.2);  
+}
+
+/* Team */
+
+.team_figure {
+    display: flex;
+    flex-wrap: wrap;
+    background-repeat: no-repeat;  
+    background-position: center;  
+    background-size: cover;
+    margin-left: -16px;
+    margin-right: -16px;
+    background-color:rgba(251, 242, 218, 1);  
+}
+
+.team_for-one {
+    background-color:rgba(251, 242, 218, 1);
+}
+
+.team-people {
+    position: relative;
+    display: block;
+    color: #fff;
+}
+.team_item{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    object-fit: cover; 
+    background-color: rgba(0, 0, 0, .5);
+}
+
+/* Contacts */
+
+.contacts {
+    background-repeat: no-repeat;  
+    background-position: center;  
+    background-size: cover;
+    background-color: rgba(251, 242, 218, 0.2);  
+}
+
+/* Footer */
+
+.footer {
+    background-repeat: no-repeat;  
+    background-position: center;  
+    background-size: cover;
+    background-color: rgba(21, 43, 60, 1);  
+}
+
+/* Social */
